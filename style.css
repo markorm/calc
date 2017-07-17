@@ -1,0 +1,178 @@
+body {
+	background: #efefef;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#calculator {
+	width: 420px;
+	margin: 80px auto 0 auto;
+	background: linear-gradient(#fff, #fffff8);
+	border-radius: 6px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 9px rgba(0,0,0,0.1);
+}
+
+#calculator:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+#display {
+	margin-bottom: 20px;
+	background: rgba(255, 215, 195, 0.12);
+	padding: 15px;
+	border-radius: 4px;
+	word-wrap: break-word;
+	color: #555;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+#display #equation {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+
+#display #equation .operator {
+	margin: 0 4px;
+	color: #da6e6e;
+}
+
+#display #result {
+	display: block;
+	font-size: 2em;
+}
+
+#error {
+	color: #fb1c1c;
+	font-style: italic;
+	opacity: 0.6;
+	margin-top: 5px;
+	font-size: 0.9em;
+	display: none;
+}
+
+#error.on {
+	display: block;
+}
+
+#input {
+	width: 75%;
+	float: left;
+}
+
+#input li {
+	float: left;
+	width: 33.33%;
+}
+
+#operations {
+	float: right;
+	width: 25%;
+}
+
+#operations li {
+	width: 100%;
+}
+
+.pad {
+	background: #efefef;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px;
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.btn {
+	padding: 5px;
+}
+
+.btn .inner {
+	text-align: center;
+	cursor: pointer;
+	font-size: 1.1em;
+	height: 50px;
+	line-height: 50px;
+	transition: background 0.8s linear, box-shadow 0.05s linear;
+	background: linear-gradient(#fffbeb, #fbfbf0);
+	color: #555;
+	padding: 0 10px;
+	border-radius: 4px;
+	width: 100%;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 0 0 rgba(0,0,0,0);
+}
+
+.btn.disabled {
+	opacity: 0.4;
+}
+
+div.buttons {
+	overflow: hidden;
+	clear: both;
+}
+
+div.buttons .btn {
+	display: block;
+	float: left;
+	text-align: center;
+	width: 25%;
+	text-transform: uppercase;
+}
+
+.btn#equals {
+	width: 50%;
+} 
+
+.btn#equals .inner {
+	background:#93dea0;
+}
+
+.btn#equals .inner:hover {
+	background: #51bd51;
+}
+
+.btn.operator .inner {
+	background: #acc9d4;
+}
+
+.btn.operator .inner:hover {
+	background: #5fa5c1;
+}
+
+.btn.dec .inner {
+	font-size: 2.4em;
+	line-height: 30px;
+}
+
+.btn.int .inner:hover  {
+	background: #fff0a5;
+}
+
+.btn .inner:active {
+	box-shadow: 0 0 0 rgba(0,0,0,0), inset 0 0 12px rgba(0,0,0,0.1);
+}
+
+.btn#delete .inner,
+.btn#reset .inner {
+	background: #e6a9a9;
+}
+
+.btn#delete .inner:hover,
+.btn#reset .inner:hover {
+	background: #ff5959;
+}

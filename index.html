@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>Calc</title>
+	<link rel="stylesheet" href="/style.css"/>
+	<script src="/jquery.min.js"></script>
+	<script src="/calc.js"></script>
+	 <meta charset="UTF-8"> 
+</head>
+<body>
+	<div id="calculator">
+		<div id="display">
+			<span id="equation">-</span>
+			<span id="result">-</span>
+			<div id="error"></div>
+		</div>
+		<div class="pad">
+			<ul id="input">
+				<li data-value="7" class="int btn"><div class="inner">7</div></li>
+				<li data-value="8" class="int btn"><div class="inner">8</div></li>
+				<li data-value="9" class="int btn"><div class="inner">9</div></li>
+				<li data-value="4" class="int btn"><div class="inner">4</div></li>
+				<li data-value="5" class="int btn"><div class="inner">5</div></li>
+				<li data-value="6" class="int btn"><div class="inner">6</div></li>
+				<li data-value="1" class="int btn"><div class="inner">1</div></li>
+				<li data-value="2" class="int btn"><div class="inner">2</div></li>
+				<li data-value="3" class="int btn"><div class="inner">3</div></li>
+				<li data-value="." class="btn dec"><div class="inner">.</div></li>
+				<li data-value="0" class="int btn"><div class="inner">0</div></li>
+				<li data-value="%" id="mod" class="btn operator"><div class="inner">%</div></li>
+			</ul>
+			<ul id="operations">
+				<li data-value="/" id="divide" class="btn operator"><div class="inner">/</div></li>
+				<li data-value="*" id="multiply" class="btn operator"><div class="inner">*</div></li>
+				<li data-value="+" id="add" class="btn operator"><div class="inner">+</div></li>
+				<li data-value="-" id="subtract" class="btn operator"><div class="inner">-</div></li>
+			</ul>
+			<div class="buttons">
+				<a class="btn" id="reset"><div class="inner">CLR</div></a>
+				<a class="btn" id="delete"><div class="inner">DEL</div></li>
+				<a class="btn" id="equals"><div class="inner">=</div></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
